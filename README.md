@@ -1,7 +1,7 @@
 # Responsive-Website-for-Restaurant README
 
 ## Overview
-This project is a restaurant website designed and developed for Assessment purpose. The goal of this project is to provide an online platform for customers to explore the restaurant's menu, make reservations, and learn more about the restaurant's offerings and ambiance.
+This project is a restaurant website designed and developed for Assessment purposes. The goal of this project is to provide an online platform for customers to explore the restaurant's menu, make reservations, and learn more about the restaurant's offerings and ambiance.
 
 ## Features
 - **Menu:** Browse through our diverse menu offerings, including appetizers, main courses, desserts, and beverages.
@@ -18,7 +18,7 @@ This project is a restaurant website designed and developed for Assessment purpo
 - jQuery
 
 ## Installation
-1. Clone the repository: `git clone [repository URL]`
+1. Clone the repository: `git clone [(https://github.com/fweshi/Responsive-Website-for-Restaurant.git)]`
 2. Navigate to the project directory: `cd restaurant-project`
 3. Open the `index.html` file in your web browser to view the website locally.
 
@@ -31,8 +31,7 @@ This project is a restaurant website designed and developed for Assessment purpo
 6. Stay updated on special offers and promotions by visiting the "Special Offers" page.
 
 ## Contributors
-- [Your Name](https://github.com/yourusername)
-- [Collaborator's Name](https://github.com/collaboratorusername)
+- [FweshiOs](https://github.com/fweshi)
 
 ## License
 This project is licensed under the [MIT License](LICENSE).
