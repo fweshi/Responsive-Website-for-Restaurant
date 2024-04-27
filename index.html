@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <title>FingerLicking Restaurant</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Custom CSS styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+
+    /* Navbar */
+    .navbar {
+    background-color: #8B4513; /* Brown */
+    }
+
+    .navbar .navbar-brand {
+    color: #ffa500; /* Orange */
+    }
+
+    .navbar .nav-link {
+    color: #ffa500 !important; /* Orange */
+    }
+
+    .navbar .nav-link:hover {
+    color: #333 !important; /* Dark gray */
+    }
+
+    .hero-section {
+      background-image: url('hero-bg.jpg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 100px 0;
+      position: relative;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .menu-section {
+      padding: 50px 0;
+    }
+
+    .menu {
+      color: #8B4513;
+      font-weight: bolder;
+    }
+
+    .menu-section .card {
+      margin-bottom: 30px;
+    }
+
+    .title {
+      font-weight: bold;
+    }
+
+    .price {
+    color: #ffa500; 
+    font-weight: bold;
+    font-size: 1.2rem; 
+    }
+
+    .about-section {
+      background-color: #ffa500; 
+      color: #fff; 
+      padding: 50px;
+      border-radius: 10px;
+      margin-bottom: 40px;
+    }
+
+    .cuisine-section,
+    .atmosphere-section,
+    .location-section,
+    .unique-features-section,
+    .join-us-section,
+    .reservation-section {
+      background-color: #ffa500; /* Orange */
+      color: #333; /* Dark Gray */
+      padding: 50px;
+      border-radius: 10px;
+      margin-bottom: 40px;
+    }
+
+    .about-us,
+    .cuisine,
+    .atmosphere,
+    .locate,
+    .unique,
+    .join-us,
+    .reserve {
+      color:#8B4513;
+      font-weight: bolder;
+    }
+
+    /* Testimonial Section */
+    .testimonial {
+    background-color: #8B4513; /* Brown */
+    color: #fff; /* White */
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    }
+
+    .testimonial p {
+    margin-bottom: 0;
+    }
+
+    .testimonial-author {
+    font-style: italic;
+    }
+
+    /* Specials Section */
+    .special {
+    background-color: #8B4513; /* Brown */
+    color: #fff; /* White */
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    }
+
+    .special h3 {
+    margin-top: 0;
+    }
+
+    /* Events Section */
+    .events-section {
+    background-color: #ffa500; /* Orange */
+    color: #333; /* Dark Gray */
+    padding: 50px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    }
+
+    .events-container {
+    display: flex;
+    justify-content: space-between;
+    }
+
+    .event {
+    flex: 0 0 48%; /* Adjust the width as needed */
+    background-color: #fff; /* White */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .event h3 {
+    margin-top: 0;
+    }
+
+    .location-icon {
+      color: #ffa500; /* Orange */
+      margin-right: 10px;
+    }
+
+    .contact-section {
+      padding: 50px 0;
+    }
+
+    .footer {
+    background-color: #8B4513; 
+    }
+
+    .footer .social-icons {
+    margin-top: 20px; 
+    }
+
+    .footer .social-icon {
+    font-size: 24px; 
+    margin-right: 10px;
+    color: #ffa500;
+    }
+
+    .footer .social-icon:hover {
+    color: #333;
+    }
+
+    /* Media Queries */
+    @media (max-width: 768px) {
+      .hero-section {
+        padding: 80px 0;
+      }
+
+      .menu-section .card {
+        margin-bottom: 20px;
+      }
+
+      .footer {
+        padding: 10px 0;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .hero-section {
+        padding: 60px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">FingerLicking Restaurant</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#hero-section">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#menu-section">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about-section">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact-section">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#testimonials-section">Testimonials</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#specials-section">Specials</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#gallery-section">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#events-section">Events</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero-section" class="hero-section text-center text-white" style="background-image: url('images/restaurant\ bg\ 2.jpg');">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Welcome to FingerLicking Restaurant</h1>
+        <p>Discover our delicious dishes</p>
+        <a href="#menu-section" class="btn btn-warning">View Menu</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+<section id="menu-section" class="menu-section">
+    <div class="container">
+      <h2 class="menu menu">Menu</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="images/dish 1.jpg" class="card-img-top" alt="Dish 1">
+            <div class="card-body">
+              <h5 class="card-title title">Protein-Rich Dish</h5>
+              <p class="card-text">This appetizing meal is sure to satisfy any food enthusiast's palate with its combination of protein-rich meats and nutritious vegetables.</p>
+              <p class="card-text price">$10.99</p> 
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="images/dish 2.jpg" class="card-img-top" alt="Dish 2">
+            <div class="card-body">
+              <h5 class="card-title title">Meat Skewer or Kebab Dish</h5>
+              <p class="card-text">This meat skewer is typically made with marinated meat pieces skewered and grilled to perfection. The sauce adds a flavorful touch to the dish, enhancing the overall taste.</p>
+              <p class="card-text price">$12.99</p> 
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="images/dish 3.jpg" class="card-img-top" alt="Dish 3">
+            <div class="card-body">
+              <h5 class="card-title title">Dish 3</h5>
+              <p class="card-text">Description of Dish 3</p>
+              <p class="card-text price">$15.99</p> 
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="images/dish 4.jpg" class="card-img-top" alt="Dish 4">
+            <div class="card-body">
+              <h5 class="card-title title">Dish 4</h5>
+              <p class="card-text">Description of Dish 4</p>
+              <p class="card-text price">$14.99</p> 
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="images/dish 5.jpg" class="card-img-top" alt="Dish 5">
+            <div class="card-body">
+              <h5 class="card-title title">Dish 5</h5>
+              <p class="card-text">Description of Dish 5</p>
+              <p class="card-text price">$16.99</p> 
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="images/dish 6.jpg" class="card-img-top" alt="Dish 6">
+            <div class="card-body">
+              <h5 class="card-title title">Dish 6</h5>
+              <p class="card-text">Description of Dish 6</p>
+              <p class="card-text price">$18.99</p> 
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="images/dish 7.jpg" class="card-img-top" alt="Dish 7">
+            <div class="card-body">
+              <h5 class="card-title title">Dish 7</h5>
+              <p class="card-text">Description of Dish 7</p>
+              <p class="card-text price">$20.99</p> 
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="images/dish 8.jpg" class="card-img-top" alt="Dish 8">
+            <div class="card-body">
+              <h5 class="card-title title">Dish 8</h5>
+              <p class="card-text">Description of Dish 8</p>
+              <p class="card-text price">$22.99</p> 
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="images/dish 9.jpg" class="card-img-top" alt="Dish 9">
+            <div class="card-body">
+              <h5 class="card-title title">Dish 9</h5>
+              <p class="card-text">Description of Dish 9</p>
+              <p class="card-text price">$24.99</p> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>  
+
+  <!-- About Us Section -->
+<section id="about-section" class="about-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="images/restaurant 2.jpg" class="img-fluid" alt="Restaurant Image">
+        </div>
+        <div class="col-md-6">
+          <h2 class="about-us about-us">About Us</h2>
+          <p>Welcome to FingerLicking Restaurant. Indulge your senses in a culinary journey like no other at FingerLicking Restaurant. Nestled in the heart of Lagos State, our restaurant offers an unforgettable dining experience that tantalizes the taste buds and captivates the soul.</p>
+          
+          <h5 class="cuisine cuisine">Cuisine</h5>
+          <p>At FingerLicking Restaurant, we celebrate the artistry of cuisine, blending traditional flavors with modern techniques to create dishes that are both innovative and comforting. Our menu showcases a diverse selection of Spanish Cuisine delicacies, expertly crafted by our talented chefs using only the freshest, locally sourced ingredients.</p>
+  
+          <h5 class="atmosphere atmosphere">Atmosphere</h5>
+          <p>Step into a world of elegance and sophistication as you enter FingerLicking Restaurant. Our inviting ambiance strikes the perfect balance between chic and cozy, providing the ideal setting for intimate dinners, lively gatherings, and everything in between. Whether you're celebrating a special occasion or simply craving a memorable meal, our restaurant sets the stage for an unforgettable dining experience.</p>
+  
+          <h5 class="location locate">Location</h5>
+          <p>Conveniently located in Lagos State, FingerLicking Restaurant is easily accessible from The Lekki-Ikoyi Link Bridge. Whether you're a local resident or visiting from out of town, our prime location makes us the perfect destination for food enthusiasts seeking exceptional cuisine in a vibrant setting.</p>
+  
+          <h5 class="unique unique">Unique Features</h5>
+          <p>At FingerLicking Restaurant, we pride ourselves on offering more than just a meal—we offer an experience. From our curated wine selection to our attentive service, every aspect of your dining experience is carefully designed to exceed your expectations. Be sure to explore our Live Flamenco Music and Dance Performances, Authentic Spanish Cuisine, and Customized Paella Parties to discover what sets us apart.</p>
+  
+          <h5 class="join-us join-us">Join Us</h5>
+          <p>We invite you to join us at FingerLicking Restaurant and discover why we're more than just a restaurant we're a culinary destination. Whether you're savoring a leisurely brunch with friends, enjoying a romantic dinner for two, or hosting a private event, we look forward to welcoming you with open arms and satisfying your cravings for exceptional food and hospitality.</p>
+          
+          <h5 class="reservation reserve">Reservations</h5>
+          <p>Ready to experience the magic of FingerLicking Restaurant? Reserve your table today and embark on a culinary adventure that will leave you craving more.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Contact Section -->
+  <section id="contact-section" class="contact-section">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Enter your name">
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter your email">
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea class="form-control" id="message" rows="3" placeholder="Enter your message"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+<section id="testimonials-section" class="testimonials-section">
+    <div class="container">
+      <h2>Testimonials</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="testimonial">
+            <p>"Great food, excellent service! Will definitely come back again."</p>
+            <p class="testimonial-author">- John Doe</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="testimonial">
+            <p>"The atmosphere is cozy and inviting, and the staff are very friendly."</p>
+            <p class="testimonial-author">- Jane Smith</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="testimonial">
+            <p>"Had a wonderful dining experience here. Highly recommend!"</p>
+            <p class="testimonial-author">- David Johnson</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Specials Section -->
+<section id="specials-section" class="specials-section">
+    <div class="container">
+      <h2>Specials</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="special">
+            <h3>Weekend Brunch</h3>
+            <p>Join us for our delicious brunch specials every Saturday and Sunday from 10am to 2pm.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="special">
+            <h3>Happy Hour</h3>
+            <p>Enjoy discounted drinks and appetizers during our happy hour from 4pm to 6pm every weekday.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="special">
+            <h3>Family Dinner Deal</h3>
+            <p>Bring the whole family and take advantage of our family dinner deal - get a free kids' meal with the purchase of any adult entrée.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+<section id="gallery-section" class="gallery-section">
+    <div class="container">
+      <h2>Gallery</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <img src="images/interior 1.jpg" class="img-fluid" alt="Interior 1">
+        </div>
+        <div class="col-md-4">
+          <img src="images/interior 2.jpg" class="img-fluid" alt="Interior 2">
+        </div>
+        <div class="col-md-4">
+          <img src="images/interior 3.jpg" class="img-fluid" alt="Interior 3">
+        </div>
+        <div class="col-md-4">
+          <img src="images/interior 4.jpg" class="img-fluid" alt="Interior 4">
+        </div>
+        <div class="col-md-4">
+          <img src="images/interior 5.jpg" class="img-fluid" alt="Interior 5">
+        </div>
+        <div class="col-md-4">
+          <img src="images/interior 6.jpg" class="img-fluid" alt="Interior 6">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Events Section -->
+<section id="events-section" class="events-section">
+    <div class="container">
+      <h2>Events</h2>
+      <div class="events-container">
+        <div class="event">
+          <h3>Live Music Night</h3>
+          <p>Join us this Friday for live music featuring local artists. Enjoy great food, drinks, and live entertainment!</p>
+          <p><strong>Date:</strong> Friday, April 30th</p>
+          <p><strong>Time:</strong> 7:00pm onwards</p>
+        </div>
+        <div class="event">
+          <h3>Wine Tasting Event</h3>
+          <p>Expand your palate and join us for an exclusive wine tasting event featuring a selection of fine wines from around the world.</p>
+          <p><strong>Date:</strong> Saturday, May 15th</p>
+          <p><strong>Time:</strong> 6:30pm to 8:30pm</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+<footer class="footer text-white text-center py-3">
+    <div class="container">
+      <p>&copy; 2024 FingerLicking Restaurant :: FweshiOs</p>
+      <!-- Social Media Icons -->
+      <div class="social-icons">
+        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+  
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
