@@ -1,0 +1,196 @@
+/* Custom CSS styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+  }
+
+  /* Navbar */
+  .navbar {
+  background-color: #8B4513; /* Brown */
+  }
+
+  .navbar .navbar-brand {
+  color: #ffa500; /* Orange */
+  }
+
+  .navbar .nav-link {
+  color: #ffa500 !important; /* Orange */
+  }
+
+  .navbar .nav-link:hover {
+  color: #f6f6f6 !important; /* White */
+  }
+
+  .hero-section {
+    background-image: url('hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+    position: relative;
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 1;
+  }
+
+  .menu-section {
+    padding: 50px 0;
+  }
+
+  .menu {
+    color: #8B4513;
+    font-weight: bolder;
+  }
+
+  .menu-section .card {
+    margin-bottom: 30px;
+  }
+
+  .title {
+    font-weight: bold;
+  }
+
+  .price {
+  color: #ffa500; 
+  font-weight: bold;
+  font-size: 1.2rem; 
+  }
+
+  .about-section {
+    background-color: #ffa500; 
+    color: #fff; 
+    padding: 50px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+  }
+
+  .cuisine-section,
+  .atmosphere-section,
+  .location-section,
+  .unique-features-section,
+  .join-us-section,
+  .reservation-section {
+    background-color: #ffa500; /* Orange */
+    color: #333; /* Dark Gray */
+    padding: 50px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+  }
+
+  .about-us,
+  .cuisine,
+  .atmosphere,
+  .locate,
+  .unique,
+  .join-us,
+  .reserve {
+    color:#8B4513;
+    font-weight: bolder;
+  }
+
+  /* Testimonial Section */
+  .testimonial {
+  background-color: #8B4513; /* Brown */
+  color: #fff; /* White */
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  }
+
+  .testimonial p {
+  margin-bottom: 0;
+  }
+
+  .testimonial-author {
+  font-style: italic;
+  }
+
+  /* Specials Section */
+  .special {
+  background-color: #8B4513; /* Brown */
+  color: #fff; /* White */
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  }
+
+  .special h3 {
+  margin-top: 0;
+  }
+
+  /* Events Section */
+  .events-section {
+  background-color: #ffa500; /* Orange */
+  color: #333; /* Dark Gray */
+  padding: 50px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  }
+
+  .events-container {
+  display: flex;
+  justify-content: space-between;
+  }
+
+  .event {
+  flex: 0 0 48%; /* Adjust the width as needed */
+  background-color: #fff; /* White */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .event h3 {
+  margin-top: 0;
+  }
+
+  .location-icon {
+    color: #ffa500; /* Orange */
+    margin-right: 10px;
+  }
+
+  .contact-section {
+    padding: 50px 0;
+  }
+
+  .footer {
+  background-color: #8B4513; 
+  }
+
+  .footer .social-icons {
+  margin-top: 20px; 
+  }
+
+  .footer .social-icon {
+  font-size: 24px; 
+  margin-right: 10px;
+  color: #ffa500;
+  }
+
+  .footer .social-icon:hover {
+  color: #333;
+  }
+
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .hero-section {
+      padding: 80px 0;
+    }
+
+    .menu-section .card {
+      margin-bottom: 20px;
+    }
+
+    .footer {
+      padding: 10px 0;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .hero-section {
+      padding: 60px 0;
+    }
+  }
